@@ -471,3 +471,64 @@ a:focus {
 .heading-container h2 span {
   color: #ff5903;
 }
+
+.subscribe-section {
+  text-align: center;
+}
+
+.subscribe-section .box {
+  background-color: #002c3e;
+  padding: 100px 45px;
+}
+
+.subscribe-section .subscribe-form .heading-container h3 {
+  position: relative;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subscribe-section .subscribe-form p {
+  color: #fff;
+}
+
+.subscribe-section .subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-section .subscribe-form form input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 90px;
+  outline: none;
+  padding: 5px 25px;
+  background-color: #fff;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.subscribe-section .subscribe-form form button {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #ff5903;
+  border: 2px solid #ff5903;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  margin-top: 35px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 285px;
+}
+
+.subscribe-section .subscribe-form form button:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
