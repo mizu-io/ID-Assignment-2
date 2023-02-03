@@ -5,7 +5,7 @@
 }
 
 body {
-    color: #fff;
+    color: #000;
     background-color: #fff;
     overflow-x: hidden;
 }
@@ -153,3 +153,183 @@ a, a:hover, a:focus {
     object-fit: cover;
     object-position: top right;
 }
+
+.hero-slider .row {
+    align-items: center;   
+}
+
+.hero-slider #carouselExampleIndicators {
+    width: 100%;
+}
+
+.hero-slider .detail-box h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 70px;
+}
+
+.hero-slider .detail-box h1 span {
+    color: #ff5903;
+    text-transform: uppercase;
+}
+
+.hero-slider .detail-box p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-slider .detail-box a {
+    display: inline-block;
+    padding: 12px 45px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #ff5903;
+    margin-top: 10px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.hero-slider .detail-box a:hover {
+    background-color: #ff5903;
+    color: #fff;
+}
+
+.hero-slider .carousel-indicators {
+    position: unset;
+    margin: 0;
+    margin-top: 45px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-slider .carousel-indicators li {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    opacity: 1;
+}
+
+.hero-slider .carousel-indicators li.active {
+    width: 20px;
+    height: 20px;
+    background-color: #ff5903;
+}
+
+.padding-layout {
+    padding: 100px 0;
+}
+
+.heading-container h2 {
+    position: relative;
+    color: #000;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.heading-container h2:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 5px;
+    background-color: #ff5903;
+    margin: 10px auto 10px;
+}
+
+.feature-section .box {
+    text-align: center;
+    margin-top: 45px;
+    background-color: #002c3e;
+    padding: 65px 50px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.feature-section .box .box-icon {
+    margin-bottom: 15px;
+}
+
+.feature-section .box .box-icon i {
+    font-size: 45px;
+}
+
+.feature-section .box .detail-box h5 {
+    font-size: 21px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.feature-section .box:hover .detail-box h5 {
+    color: #ff5903;
+}
+
+.feature-section .box .detail-box p {
+    margin-bottom: 0;
+    color: #f2f2f2;
+}
+
+.arrival-section {
+    background-color: #002c3e;
+}
+
+.arrival-section .heading-container {
+    margin-bottom: 10px
+}
+
+.arrival-section .box {
+    padding: 120px 45px;
+    position: relative;
+    z-index: 4;
+}
+
+.arrival-section .box .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.arrival-section .box h2 {
+    color: #fff;
+}
+
+.arrival-section .box .bg-img img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.remove-sep h2:after {
+    display: none;
+}
+
+.arrival-section .box p {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.arrival-section .box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #ff5903;
+    border: 2px solid #ff5903;
+    color: #fff;
+    border-radius: 0;
+    transition: all 0.5s;
+}
+
+.arrival-section .box a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
