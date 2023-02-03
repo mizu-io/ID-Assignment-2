@@ -446,3 +446,28 @@ a:focus {
   border: 1px solid #ff5903;
   color: #fff;
 }
+
+.product-section .btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.product-section .btn-box a {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #ff5903;
+  border: 2px solid #ff5903;
+  color: #fff;
+  transition: all 0.3s;
+  border-radius: 30px;
+}
+
+.product-section .btn-box a:hover {
+  background-color: transparent;
+  color: #ff5903;
+}
+
+.heading-container h2 span {
+  color: #ff5903;
+}
