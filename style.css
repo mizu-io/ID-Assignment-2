@@ -596,3 +596,133 @@ a:focus {
   font-size: 17px;
   color: #000;
 } */
+
+.footer {
+  background-color: #002c3e;
+  padding: 90px 0 70px;
+}
+
+.footer .footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer .footer-logo a {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.footer .footer-logo a span {
+  color: #ff5903;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer .information p {
+  margin-bottom: 1.2rem;
+  line-height: 25px;
+  font-size: 15px;
+  max-width: 300px;
+  color: #fff;
+}
+
+.footer .widget-menu h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.footer .widget-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .widget-menu ul li {
+  float: left;
+  width: 100%;
+}
+
+.footer .widget-menu ul li a {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 0;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.field {
+  display: flex;
+}
+
+.form_sub .field input[type="email"],
+.form_sub .field input[type="email"]:hover,
+.form_sub .field input[type="email"]:focus {
+  padding: 10px 110px 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  height: 48px;
+}
+
+.form_sub {
+  position: relative;
+}
+
+.form_sub input[type="email"] + input[type="submit"] {
+  position: absolute;
+  right: 0;
+  background-color: #ff5903;
+  color: #fff;
+  top: 0;
+  border: none;
+  font-size: 14px;
+  height: 48px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.copy-right {
+  background-color: #0b384a;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.copy-right p {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.copy-right p a {
+  margin: 0;
+  color: #ff5903;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/*Responsiveness*/
+
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .hero-section .header-logo,
+  .hero-section .header-menu,
+  .hero-section .header-right {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hero-slider .detail-box h1 {
+    font-size: 3.5rem;
+  }
+}
