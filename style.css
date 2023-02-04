@@ -532,3 +532,67 @@ a:focus {
   color: #fff;
   border-color: #fff;
 }
+
+/* .client-section .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 55px;
+}
+
+.client-section .box .img-container {
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+}
+
+.client-section .box .img-container .img-box {
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-left: -1px;
+}
+
+.client-section .box .img-container .img-box .img-box-inner {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.client-section .box .img-container .img-box .img-box-inner img{
+  width: 100%;
+}
+
+.client-section .box .detail-box {
+  margin-top: 25px; 
+}
+
+.client-section .box .detail-box h5 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.client-section .box .detail-box h6 {
+  font-size: 15px;
+  color: #999998;
+}
+
+.client-section .box .detail-box p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 17px;
+  color: #000;
+} */
