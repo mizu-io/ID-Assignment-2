@@ -3,3 +3,4 @@ function updateProgressBar(progressBar, value) {
     progressBar.querySelector(".progress-fill").style.width = `${value}%`;
     progressBar.querySelector(".progress-text").textContent = `${value}%`;
 }
+
