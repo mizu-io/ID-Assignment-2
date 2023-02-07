@@ -2,7 +2,6 @@
 $( document ).ready(function() {
 
 
-
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -16,25 +15,30 @@ $( document ).ready(function() {
     }
     console.log(localStorage.getItem("id"));
 
+    var name;
+
     $.ajax(settings).done(function (response) {
         console.log(response)
         for (var i = 0; i < response.length; i++ )
         {
             if (localStorage.getItem("id") == response[i]._id)
             {
-                var name = response[i].Name;
+                name = response[i].Name;
                 
                 updateProgressBar(response[i].Exp)
             }
         }
+        if (localStorage.getItem("id") != null)
+        {
+            localStorage.getItem("id")
+
+            document.querySelector(".header-right-btn").innerHTML = name;
+
+        }
     });
+
 })
 
-if (localStorage.getItem("id") != null)
-{
-    localStorage.getItem("id")
-    
-}
 
 function updateProgressBar(value) {
     value = Math.round(value);
