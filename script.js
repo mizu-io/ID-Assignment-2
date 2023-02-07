@@ -33,6 +33,7 @@ $( document ).ready(function() {
 if (localStorage.getItem("id") != null)
 {
     localStorage.getItem("id")
+    
 }
 
 function updateProgressBar(value) {

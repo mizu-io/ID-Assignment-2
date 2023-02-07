@@ -88,8 +88,6 @@ $( document ).ready(function() {
             console.log(response)
             for (var i = 0; i < response.length; i++ )
             {
-
-
                 if (response[i].Email == Email && response[i].Password == Password)
                 {
                     console.log(response[i].Email)
