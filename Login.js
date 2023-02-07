@@ -1,11 +1,41 @@
 //
 $( document ).ready(function() {
+
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    const signupsuccessfulbtn = document.querySelector("#Register-Button-input");
+
+    //moves the text when the different buttons are clicked.
+    signupBtn.onclick = (() => {
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+        signupBtn.click();
+        return false;
+    });
+    signupsuccessfulbtn.onclick = (() => {
+        loginBtn.click();
+        return false;
+    });
+
     //post
     //event listener for register
     $("#Register-Button-input").on("click", function(){
         var Password = $("#Register-Password-input").val()
+        $("#Register-Password-input").val("")
         var Email = $("#Register-Email-input").val()
+        $("#Register-Email-input").val("")
         var Name = $("#Register-Name-input").val()
+        $("#Register-Name-input").val("")
+
         //gamification
         var Level = 1
         var Exp = 0
@@ -58,6 +88,8 @@ $( document ).ready(function() {
             console.log(response)
             for (var i = 0; i < response.length; i++ )
             {
+
+
                 if (response[i].Email == Email && response[i].Password == Password)
                 {
                     console.log(response[i].Email)
@@ -67,7 +99,14 @@ $( document ).ready(function() {
                     
                     console.log(response[i].Level)
                     console.log(response[i].Exp)
+
+
+                    localStorage.setItem("id", response[i]._id)
+
+                    window.location.href = "index.html";
                 }
+                
+
             }
         });
 
