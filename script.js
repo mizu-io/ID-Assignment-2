@@ -31,9 +31,9 @@ $( document ).ready(function() {
         if (localStorage.getItem("id") != null)
         {
             localStorage.getItem("id")
-
-            document.querySelector(".header-right-btn").innerHTML = name;
-
+            document.querySelector(".header-right-btn").innerHTML = "<img src=\"images/usericon.svg\">";
+            document.querySelector(".header-right-btn").innerHTML += "<div style=\"display: inline-block; width: 20px\">    </div>" + name;
+            //document.querySelector(".header-right-btn").innerHTML += "<div style=\"\">    </div>";
         }
     });
 
