@@ -5,7 +5,7 @@ Gamified Interactive Ecommerce Website
 ## credits:
 
 Product images used:
-For Laptop section:
+# For Laptop section:
 - laptop 1
 - https://www.amazon.sg/Alienware-17-3-inch-Gaming-Laptop/dp/B08XFQ9JQ3?th=1
 - laptop 2
@@ -19,7 +19,7 @@ For Laptop section:
 - keyboard 2
 - https://www.amazon.sg/Razer-RZ03-03541900-R3M1-BlackWidow-Mechanical-Keyboard/dp/B08H69RRC9
 
-For console section:
+# For console section:
 - https://www.amazon.sg/Razer-RZ03-03531700-R3M1-BlackWidow-Wireless-Mechanical/dp/B08GCS5VKG?th=1
 - controller 1
 - https://www.amazon.sg/Sony-DualSense-Controller-White-PS5/dp/B08H99BPJN/ref=asc_df_B08H99BPJN/
@@ -34,7 +34,7 @@ For console section:
 - xbox charginstand2
 - https://www.amazon.sg/PowerA-Charging-Stand-Xbox-Rechargeable/dp/B08J8458GR
 
-For Phones section:
+# For Phones section:
 - iphone 1
 - https://www.apple.com/sg/iphone-14/?afid=p238%7CssEm8CYGc-dc_mtid_20925brv44930_pcrid_621807133908_pgrid_138270391662_pexid__&cid=wwa-sg-kwgo-iphone-slid----Avail-
 - iphone 2
@@ -48,7 +48,7 @@ For Phones section:
 - samsung 3
 - https://www.dxomark.com/samsung-galaxy-s21-ultra-5g-snapdragon-display-review-near-twin-of-exynos-version/
 
-Logo tiny icon:
+# Logo tiny icon:
 Freepik.com
 
 
