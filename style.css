@@ -675,7 +675,45 @@ a:focus {
 }
 .product-itm {
   width: 50%;
+  margin-bottom: 30px;
+  text-align: center;
 }
+
+.product-name {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.product-description {
+  font-weight: 350;
+}
+
+.product-price {
+  font-size: 1.5em;
+}
+
+
+
+.cart-btn{
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.cart-btn a {
+  padding: 10px 40px;
+  background-color: #ff5903;
+  border: 2px solid #ff5903;
+  color: #fff;
+  transition: all 0.3s;
+  border-radius: 30px;
+}
+
+.cart-btn a:hover {
+  background-color: transparent;
+  color: #ff5903;
+}
+
 
 /* .image-container {
   height: 100%;
