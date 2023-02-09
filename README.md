@@ -5,6 +5,9 @@ Gamified Interactive Ecommerce Website
 ## credits:
 
 Product images used:
+#### index page:
+ - https://www.wallpaperflare.com/search?wallpaper=keyboard
+
 ### For Laptop section:
 - laptop 1
 - https://www.amazon.sg/Alienware-17-3-inch-Gaming-Laptop/dp/B08XFQ9JQ3?th=1
