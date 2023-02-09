@@ -5,8 +5,8 @@ Gamified Interactive Ecommerce Website
 ## credits:
 
 Product images used:
-index page:
-https://www.wallpaperflare.com/search?wallpaper=keyboard
+#### index page:
+ - https://www.wallpaperflare.com/search?wallpaper=keyboard
 
 ### For Laptop section:
 - laptop 1
