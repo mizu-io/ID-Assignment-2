@@ -4,7 +4,7 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-total = 0;
+totaljs = 0;
 
 function ready() {
 
@@ -36,8 +36,7 @@ function purchaseClicked() {
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
-
-    total = Math.round(total) / 100
+    totaljs = Math.round(totaljs) / 100
 
     // this section is to be checked through
     
@@ -58,22 +57,21 @@ function purchaseClicked() {
             }
     
             $.ajax(settings).done(function (response) {
-                console.log(response)
+                let id = localStorage.getItem("id")
                 for (var i = 0; i < response.length; i++ )
                 {
-                    if (localStorage.getItem("id") == response[i]._id)
+                    if (id == response[i]._id)
                     {
                         exp = response[i].Exp;
-                        exp += total
-                        console.log(exp);
+                        exp += totaljs;
     
                         //need to look at this tommorow
     
-                        var jsondata = {"Exp":exp};
+                        var jsondata = {"Exp": exp};
                         var settings = {
                             "async": true,
                             "crossDomain": true,
-                            "url": `https://id2tes-fe40.restdb.io/rest/userinfo/${localStorage.getItem("id")}`,
+                            "url": `https://id2tes-fe40.restdb.io/rest/userinfo/${id}`,
                             "method": "PUT",
                             "headers": {
                                 "content-type": "application/json",
@@ -166,6 +164,7 @@ function addItemToCart(title, price, imageSrc) {
 }
 
 function updateCartTotal() {
+    var total = 0;
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
     for (var i = 0; i < cartRows.length; i++) {
@@ -177,5 +176,6 @@ function updateCartTotal() {
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
+    totaljs += total
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
