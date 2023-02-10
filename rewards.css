@@ -47,7 +47,7 @@
 .container25 img {
   position: absolute;
   width: 7em;
-  top: 41%;
+  top: 60%;
   right: -8%;
 }
 #final-value {
@@ -57,6 +57,27 @@
   color: #202020;
   font-weight: 500;
 }
+
+.prize-container-title{
+  text-align: center;
+  font-weight: 600;
+}
+
+.prize-container {
+  display: flex;
+  border: solid 4px;
+  border-color: #202020;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.prize-row img {
+  width: 100%;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   .wrapper {
     margin-top: 60%;
@@ -71,3 +92,5 @@
     right: -5%;
   }
 }
+
+
