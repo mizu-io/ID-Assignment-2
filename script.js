@@ -5,11 +5,11 @@ $( document ).ready(function() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-4eb6.restdb.io/rest/userinfo",
+        "url": "https://idassignment2test-7562.restdb.io/rest/userinfo",
         "method": "GET",
         "headers": {
         "content-type": "application/json",
-        "x-apikey": "63df9aa93bc6b255ed0c46ac",
+        "x-apikey": "63e5bdaf478852088da67fc0",
         "cache-control": "no-cache"
         }
     }

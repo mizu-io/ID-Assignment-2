@@ -48,7 +48,7 @@ function purchaseClicked() {
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": "https://idassignment2-4eb6.restdb.io/rest/userinfo",
+                "url": "https://idassignment2test-7562.restdb.io/rest/userinfo",
                 "method": "GET",
                 "headers": {
                 "content-type": "application/json",

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treasure Trove</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="rewards.css" />
     <link rel="icon" type="image/svg" href="images/tab icon.svg">
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
         <div class="container">
             <div class="row">
@@ -47,15 +49,16 @@
             </div>
         </div>
     </header>
+    <!--wheel code-->
     <div class="wrapper">
-      <div class="container">
-        <canvas id="wheel"></canvas>
-        <button id="spin-btn">Spin</button>
-        <img src="spinner-arrow-.svg" alt="spinner-arrow" />
-      </div>
-      <div id="final-value">
-        <p>Click On The Spin Button To Start</p>
-      </div>
+        <div class="container25">
+            <canvas id="wheel"></canvas>
+            <button id="spin-btn">Spin</button>
+            <img src="images/spinnerarrow.svg" alt="spinner-arrow" width="200%" />
+        </div>
+        <div id="final-value">
+            <p>Click On The Spin Button To Start</p>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
@@ -64,8 +67,11 @@
     <!-- Chart JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <!-- Chart JS Plugin for displaying text over chart -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
     <!-- Script -->
     <script src="rewards.js"></script>
-  </body>
+    <!-- <script src="script.js"></script> -->
+</body>
+
 </html>
