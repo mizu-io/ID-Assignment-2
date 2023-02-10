@@ -1,5 +1,6 @@
 # ID-Assignment-2
 Gamified Interactive Ecommerce Website
+Treasure Trove
 
 Github Repository page:
 https://github.com/mizu-io/ID-Assignment-2
