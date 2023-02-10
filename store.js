@@ -42,16 +42,16 @@ function purchaseClicked() {
     
         $ ( document ).ready(function() {
             var exp = 0;
-    
+            var level = 0;
     
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": "https://id2tes-fe40.restdb.io/rest/userinfo",
+                "url": "https://id2assignment-faf3.restdb.io/rest/userinfo",
                 "method": "GET",
                 "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63e5fe33478852088da67ff1",
+                "x-apikey": "63e6584b478852088da68034",
                 "cache-control": "no-cache"
                 }
             }
@@ -59,23 +59,32 @@ function purchaseClicked() {
             $.ajax(settings).done(function (response) {
                 let id = localStorage.getItem("id")
                 for (var i = 0; i < response.length; i++ )
-                {
+                {                    
                     if (id == response[i]._id)
                     {
                         exp = response[i].Exp;
+                        level = response[i].Level;
                         exp += totaljs;
+                        if (exp >= 100)
+                        {
+                            exp -= 100
+                            level += 1
+                        }
     
-                        //need to look at this tommorow
-    
-                        var jsondata = {"Exp": exp};
+                        var jsondata = {"Password": response[i].Password,
+                        "Email": response[i].Email,
+                        "Name": response[i].Name,
+                        "Level": level,
+                            "Exp": exp};
+
                         var settings = {
                             "async": true,
                             "crossDomain": true,
-                            "url": `https://id2tes-fe40.restdb.io/rest/userinfo/${id}`,
+                            "url": `https://id2assignment-faf3.restdb.io/rest/userinfo/${id}`,
                             "method": "PUT",
                             "headers": {
                                 "content-type": "application/json",
-                                "x-apikey": "63e5fe33478852088da67ff1",
+                                "x-apikey": "63e6584b478852088da68034",
                                 "cache-control": "no-cache"
                             },
                             "processData": false,

@@ -5,11 +5,11 @@ $( document ).ready(function() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://id2tes-fe40.restdb.io/rest/userinfo",
+        "url": "https://id2assignment-faf3.restdb.io/rest/userinfo",
         "method": "GET",
         "headers": {
         "content-type": "application/json",
-        "x-apikey": "63e5fe33478852088da67ff1",
+        "x-apikey": "63e6584b478852088da68034",
         "cache-control": "no-cache"
         }
     }
