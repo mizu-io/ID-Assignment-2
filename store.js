@@ -4,7 +4,10 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+total = 0;
+
 function ready() {
+
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
@@ -33,6 +36,67 @@ function purchaseClicked() {
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
+
+    total = Math.round(total) / 100
+
+    // this section is to be checked through
+    
+        $ ( document ).ready(function() {
+            var exp = 0;
+    
+    
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://idassignment2-4eb6.restdb.io/rest/userinfo",
+                "method": "GET",
+                "headers": {
+                "content-type": "application/json",
+                "x-apikey": "63e5bdaf478852088da67fc0",
+                "cache-control": "no-cache"
+                }
+            }
+    
+            $.ajax(settings).done(function (response) {
+                console.log(response)
+                for (var i = 0; i < response.length; i++ )
+                {
+                    if (localStorage.getItem("id") == response[i]._id)
+                    {
+                        exp = response[i].Exp;
+                        exp += total
+                        console.log(exp);
+    
+                        //need to look at this tommorow
+    
+                        var jsondata = {"Exp":exp};
+                        var settings = {
+                            "async": true,
+                            "crossDomain": true,
+                            "url": `https://idassignment2test-7562.restdb.io/rest/userinfo/${localStorage.getItem("id")}`,
+                            "method": "PUT",
+                            "headers": {
+                                "content-type": "application/json",
+                                "x-apikey": "63e5bdaf478852088da67fc0",
+                                "cache-control": "no-cache"
+                            },
+                            "processData": false,
+                            "data": JSON.stringify(jsondata)
+                        }
+                    
+                        $.ajax(settings).done(function (response) {
+                            console.log(exp);
+                        });
+                    }
+    
+                }
+            });
+    
+    
+    
+    
+    
+        })
 
     let popup = document.getElementById('lottie-anim')
     popup.classList.toggle('active')
@@ -104,7 +168,6 @@ function addItemToCart(title, price, imageSrc) {
 function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-    var total = 0
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
