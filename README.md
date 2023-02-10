@@ -1,6 +1,6 @@
 # ID-Assignment-2
 Gamified Interactive Ecommerce Website
-
+https://github.com/mizu-io/ID-Assignment-2
 Treasure Trove
 
 # Design Process
@@ -10,7 +10,7 @@ Treasure Trove
 # Technologies Used
 
 Github Repository page:
-https://github.com/mizu-io/ID-Assignment-2
+
 
 ## credits:
 
