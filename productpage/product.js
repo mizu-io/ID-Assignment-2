@@ -5,11 +5,11 @@ $( document ).ready(function() {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2test-7562.restdb.io/rest/userinfo",
+        "url": "https://id2tes-fe40.restdb.io/rest/userinfo",
         "method": "GET",
         "headers": {
         "content-type": "application/json",
-        "x-apikey": "63e5bdaf478852088da67fc0",
+        "x-apikey": "63e5fe33478852088da67ff1",
         "cache-control": "no-cache"
         }
     }
@@ -33,6 +33,7 @@ $( document ).ready(function() {
             localStorage.getItem("id")
             document.querySelector(".header-right-btn").innerHTML = "<img src=\"../images/usericon.svg\">";
             document.querySelector(".header-right-btn").innerHTML += "<div style=\"display: inline-block; width: 20px\">    </div>" + name;
+            $("div.header-right-btn").append("<div style=\"white-space: nowrap\;overflow: hidden\;display:inline-block\">Level" + Level + "<div class=\"progress\"> <div class=\"progress-fill\"><span class=\"progress-text\">0%</span></div></div></div>")
             //document.querySelector(".header-right-btn").innerHTML += "<div style=\"\">    </div>";
         }
     });

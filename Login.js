@@ -48,11 +48,11 @@ $( document ).ready(function() {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://idassignment2test-7562.restdb.io/rest/userinfo",
+            "url": "https://id2tes-fe40.restdb.io/rest/userinfo",
             "method": "POST",
             "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63e5bdaf478852088da67fc0",
+                "x-apikey": "63e5fe33478852088da67ff1",
                 "cache-control": "no-cache"
             },
             "processData": false,
@@ -74,11 +74,11 @@ $( document ).ready(function() {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://idassignment2test-7562.restdb.io/rest/userinfo",
+            "url": "https://id2tes-fe40.restdb.io/rest/userinfo",
             "method": "GET",
             "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e5bdaf478852088da67fc0",
+            "x-apikey": "63e5fe33478852088da67ff1",
             "cache-control": "no-cache"
             }
         }
