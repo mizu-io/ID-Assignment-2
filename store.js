@@ -27,13 +27,28 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
+
+    let popup = document.getElementById('lottie-anim')
+    popup.classList.toggle('active')
+    delay(2500).then(deactivate);
 }
+
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time)); // in ms
+  }
+
+function deactivate() {
+    let popup = document.getElementById('lottie-anim')
+    popup.classList.toggle('active')
+}
+
+
 
 function removeCartItem(event) {
     var buttonClicked = event.target

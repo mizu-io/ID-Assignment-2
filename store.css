@@ -223,3 +223,16 @@
     height: 50%;
   }
 }
+
+#lottie-anim {
+  visibility: hidden;
+  position: absolute;
+  margin-left: 27%;
+  margin-top: -20%;
+}
+
+#lottie-anim.active {
+  visibility: visible;
+}
+
+
