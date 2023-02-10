@@ -19,13 +19,23 @@ This website is targeted to those who are interested in purchasing tech products
 
 1. [JQuery](https://jquery.com/)
 
+   - jquery used to allow easier use of javascript on webpagees
+
 2. [restdb.io](https://restdb.io/)
+
+   - restdb api was used to store user accounts and account details such as, name, email address, password, level and exp
 
 3. [LottieFiles](https://lottiefiles.com/)
 
+   - used to show an animation whenever user clicks on purchase button in store page
+
 4. [Bootstrap4](https://getbootstrap.com/)
 
+   - bootstrap used to format html code and allows responsiveness of the website, allowing mobile view to view page content without being contorted
+
 5. [cdnjs](https://cdnjs.com/)
+
+   - cdnjs used for the prize wheel in rewards page
 
 ## Languages used
 
