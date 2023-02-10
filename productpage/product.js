@@ -15,26 +15,33 @@ $( document ).ready(function() {
     }
     console.log(localStorage.getItem("id"));
 
+    var exp;
+    var level;
     var name;
 
-    $.ajax(settings).done(function (response) {
-        console.log(response)
+    $.ajax(settings).done(function (response) { 
         for (var i = 0; i < response.length; i++ )
         {
             if (localStorage.getItem("id") == response[i]._id)
             {
                 name = response[i].Name;
-                
-                updateProgressBar(response[i].Exp)
+                level = response[i].Level;
+                exp = response[i].Exp;
             }
         }
         if (localStorage.getItem("id") != null)
         {
+            console.log(exp)
+            if (exp >= 100)
+            {
+                exp -= 100;
+                level += 1;
+            }
             localStorage.getItem("id")
             document.querySelector(".header-right-btn").innerHTML = "<img src=\"../images/usericon.svg\">";
             document.querySelector(".header-right-btn").innerHTML += "<div style=\"display: inline-block; width: 20px\">    </div>" + name;
-            $("div.header-right-btn").append("<div style=\"white-space: nowrap\;overflow: hidden\;display:inline-block\">Level" + Level + "<div class=\"progress\"> <div class=\"progress-fill\"><span class=\"progress-text\">0%</span></div></div></div>")
-            //document.querySelector(".header-right-btn").innerHTML += "<div style=\"\">    </div>";
+            $("div.header-right-btn").append("<div style=\"white-space: nowrap\;overflow: hidden\;display:inline-block\;\">Level " + level + "<div class=\"progress\"> <div class=\"progress-fill\"><span class=\"progress-text\">0%</span></div></div></div>")
+            updateProgressBar(exp);
         }
     });
 
