@@ -1,24 +1,58 @@
 # ID-Assignment-2
+
 Gamified Interactive Ecommerce Website
-https://github.com/mizu-io/ID-Assignment-2
+It is an E-commerce website which places an emphasis on tech items from laptops to smartphones. The prices and details, such as product descriptions and specifications, will be displayed for customers to have an informed choice on what to purchase. Images of the products would be shown together with the details.
+Github Repository page: https://github.com/mizu-io/ID-Assignment-2
 Treasure Trove
 
 # Design Process
 
+This website is targeted to those who are interested in purchasing tech products. The website is designed in a way to allow users to easily access the pages they want to use. The color scheme of the site was chosen as the colors contrast nicely and compliment each other and allow it to be easier for the users to see specific parts of the pages.
+
 # Features
+
+1. Navigation bar on all pages to allow users to navigate through the website. Animation when hovering the mouse cursor over nav bar elements have been included.
+
+2. Javascript have been used to create the cart, allowing users to add items to the cart and also to purchase items, showing a lottie animation when customers click on the purchase button in the store page, make it so that the progress bar moves whenever items have been purchased and also to allow users to register accounts and login through an api.
 
 # Technologies Used
 
-Github Repository page:
+1. [JQuery](https://jquery.com/)
 
+   - jquery used to allow easier use of javascript on webpagees
+
+2. [restdb.io](https://restdb.io/)
+
+   - restdb api was used to store user accounts and account details such as, name, email address, password, level and exp
+
+3. [LottieFiles](https://lottiefiles.com/)
+
+   - used to show an animation whenever user clicks on purchase button in store page
+
+4. [Bootstrap4](https://getbootstrap.com/)
+
+   - bootstrap used to format html code and allows responsiveness of the website, allowing mobile view to view page content without being contorted
+
+5. [cdnjs](https://cdnjs.com/)
+
+   - cdnjs used for the prize wheel in rewards page
+
+## Languages used
+
+- HTML
+- CSS
+- Javascript
 
 ## credits:
 
 Product images used:
+
 #### index page:
- - https://www.wallpaperflare.com/search?wallpaper=keyboard
+
+- https://www.wallpaperflare.com/search?wallpaper=keyboard
 
 ### For Laptop section:
+
 - laptop 1
 - https://www.amazon.sg/Alienware-17-3-inch-Gaming-Laptop/dp/B08XFQ9JQ3?th=1
 - laptop 2
@@ -33,6 +67,7 @@ Product images used:
 - https://www.amazon.sg/Razer-RZ03-03541900-R3M1-BlackWidow-Mechanical-Keyboard/dp/B08H69RRC9
 
 ### For console section:
+
 - https://www.amazon.sg/Razer-RZ03-03531700-R3M1-BlackWidow-Wireless-Mechanical/dp/B08GCS5VKG?th=1
 - controller 1
 - https://www.amazon.sg/Sony-DualSense-Controller-White-PS5/dp/B08H99BPJN/ref=asc_df_B08H99BPJN/
@@ -48,6 +83,7 @@ Product images used:
 - https://www.amazon.sg/PowerA-Charging-Stand-Xbox-Rechargeable/dp/B08J8458GR
 
 ### For Phones section:
+
 - iphone 1
 - https://www.apple.com/sg/iphone-14/?afid=p238%7CssEm8CYGc-dc_mtid_20925brv44930_pcrid_621807133908_pgrid_138270391662_pexid__&cid=wwa-sg-kwgo-iphone-slid----Avail-
 - iphone 2
@@ -62,6 +98,5 @@ Product images used:
 - https://www.dxomark.com/samsung-galaxy-s21-ultra-5g-snapdragon-display-review-near-twin-of-exynos-version/
 
 ### Logo tiny icon:
+
 Freepik.com
-
-
